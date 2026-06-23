@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-data-viz",
-  "version": "1.0.0",
-  "description": "Data Visualization Storyteller — Generate publication-quality charts with Observable Plot/D3.js/ECharts from datasets",
+  "version": "1.0.1",
+  "description": "Data Visualization Storyteller \u2014 Generate publication-quality charts with Observable Plot/D3.js/ECharts from datasets",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-data-viz",
   "homepage": "https://cortexprism.io/marketplace/plugins/data-viz",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "viz_generate_chart",
@@ -26,9 +29,20 @@
       "description": "Add insights and annotations to chart",
       "params": []
     },
-    { "name": "viz_export", "description": "Export to PNG, SVG, or interactive HTML", "params": [] }
+    {
+      "name": "viz_export",
+      "description": "Export to PNG, SVG, or interactive HTML",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
